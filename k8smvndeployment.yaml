@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Java-App-deploy
+  name: java-app-deploy
   labels:
     app: label-app
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: arun/Java-App-deploy
+        image: arun/java-app-deploy
         ports:
         - containerPort: 8080
 ---
